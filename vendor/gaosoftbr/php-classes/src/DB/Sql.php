@@ -1,6 +1,6 @@
 <?php 
 
-namespace Gaosoft\DB;
+namespace app\DB;
 
 class Sql {
 
