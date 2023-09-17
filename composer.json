@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\gaosoftbr\\php-classes\\src"
+            "Gaosoft\\": "vendor\\gaosoftbr\\php-classes\\src"
         }
     }
 }

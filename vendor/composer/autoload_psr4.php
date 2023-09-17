@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    '' => array($vendorDir . '/gaosoftbr/php-classes/src'),
+    'Gaosoft\\' => array($vendorDir . '/gaosoftbr/php-classes/src'),
 );

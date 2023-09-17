@@ -6,8 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit63c9bba05d6e9c0a069dcf2d893e97cd
 {
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/gaosoftbr/php-classes/src',
+    public static $prefixLengthsPsr4 = array (
+        'G' => 
+        array (
+            'Gaosoft\\' => 8,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Gaosoft\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gaosoftbr/php-classes/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -42,7 +52,8 @@ class ComposerStaticInit63c9bba05d6e9c0a069dcf2d893e97cd
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInit63c9bba05d6e9c0a069dcf2d893e97cd::$fallbackDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit63c9bba05d6e9c0a069dcf2d893e97cd::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit63c9bba05d6e9c0a069dcf2d893e97cd::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit63c9bba05d6e9c0a069dcf2d893e97cd::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit63c9bba05d6e9c0a069dcf2d893e97cd::$classMap;
 
